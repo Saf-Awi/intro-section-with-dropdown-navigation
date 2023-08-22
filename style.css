@@ -1,0 +1,410 @@
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+:root {
+    --clr-Almost-White: hsl(0, 0%, 98%);
+    --clr-Medium-Gray: hsl(0, 0%, 41%);
+    --clr-Almost-Black: hsl(0, 0%, 8%);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
+
+body {
+    font-family: 'Epilogue', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    padding: 30px;
+    color: var(--clr-Medium-Gray);
+    background-color: hsl(0, 0%, 94%);
+    max-height: 100vh;
+    display: grid;
+    justify-content: center;
+}
+
+.overlay {
+    display: none;
+}
+
+/*---------- Navbar ----------*/
+.mobile-nav {
+    display: none;
+}
+
+#menu-icon, .menu-icon {
+   display: none;
+   
+
+}
+
+.close-menu {
+    display: none;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    margin-right: 20px;
+}
+
+.navLink {
+    margin-right: 40px;
+    cursor: pointer;
+    position: relative;
+    right: 100px;
+}
+
+.navLink:hover {
+    color: var(--clr-Almost-Black);
+}
+
+
+
+a {
+    text-decoration: none;
+    font-style: normal;
+    color: var(--clr-Medium-Gray);
+}
+
+a:hover {
+    color: var(--clr-Almost-Black);
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+ 
+}
+
+li {
+    list-style: none;
+}
+
+.dropdown-list {
+    background-color: var(--clr-Almost-White);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+    position: absolute;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 9999;
+   
+}
+
+.features-dropdown {
+    width: 130px;
+    right: -10px;
+}
+
+.company-dropdown {
+    width: 90px;
+    left: -17px;
+}
+
+.dropdown-list li {
+    margin-top: 10px;
+}
+
+.btns {
+    display: flex;
+}
+
+.login-btn {
+    color: var(--clr-Medium-Gray);
+    font-size: 18px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    margin-right: 20px;
+    height: 50px;
+
+
+}
+
+.register-btn {
+    color: var(--clr-Medium-Gray);
+    font-size: 18px;
+    border: 2px solid var(--clr-Medium-Gray);
+    padding: 10px;
+    border-radius: 12px;
+    background-color: transparent;
+    cursor: pointer;
+    height: 50px;
+   
+
+}
+
+.register-btn:hover {
+    border-color: var(--clr-Almost-Black);
+    color: var(--clr-Almost-Black);
+}
+
+.login-btn:hover {
+    color: var(--clr-Almost-Black);
+}
+
+
+
+
+/*---------- drop downs ----------*/
+
+#features-dropdown {
+    background-color: var(--clr-Almost-White);
+    border-radius: 10px;
+    width: 150px;
+    padding: 15px;
+    position: relative;
+    z-index: 9999;
+    
+   
+}
+
+#features-dropdown ul li {
+    margin-top: 15px;
+    margin-left: 15px;
+    text-align: left;
+}
+
+
+.hidden {
+    display: none;
+    
+}
+
+.show {
+    display: flex;
+}
+
+/*---------- main content ----------*/
+
+.main-container {
+    display: flex;
+    padding: 0 100px;
+    gap: 50px;
+    margin-top: 300px;
+    z-index: 0;
+}
+
+h1 {
+    color: var(--clr-Almost-Black);
+    font-size: 70px;
+    margin-bottom: 20px;
+}
+
+.hero-main-img {
+    background-image: url(./images/image-hero-desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    width: 100%;
+    position: relative;
+    bottom: 250px;
+}
+
+.left-main {
+    position: relative;
+    bottom: 100px;
+}
+
+.main-p {
+    margin-top: 30px;
+    margin-bottom: 40px;
+    line-height: 1.5;
+}
+
+.clients {
+    margin-top: 95px;
+    position: relative;
+    right: 25px;
+    
+}
+
+.client {
+    margin-left: 25px;
+}
+
+.learn-more-btn {
+    color: var(--clr-Almost-White);
+    font-size: 18px;
+    background-color: var(--clr-Almost-Black);
+    padding: 10px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.learn-more-btn:hover {
+    background-color: var(--clr-Almost-White);
+    color: var(--clr-Almost-Black);
+}
+
+.attribution { 
+    font-size: 11px;
+    text-align: center;
+    color: var(--clr-Medium-Gray);
+ }
+.attribution a { 
+  color: var(--clr-Almost-Black)
+}
+
+
+/*---------- mobile view ----------*/
+
+@media screen and (max-width: 768px){
+
+    body {
+        padding: 30px;
+        
+
+    }
+
+    .logo {
+        position: relative;
+        left: 20px;
+    }
+
+
+    .main-container {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 0;
+        gap: 0;
+        text-align: center;
+    }
+
+
+    .hero-main-img {
+        background-image: url(./images/image-hero-mobile.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 500px;
+        width: 500px;
+        position: relative;
+        bottom: 0px;
+        margin-top: 30px;
+        
+        
+    }
+
+    .left-main {
+        position: relative;
+        bottom: 0;
+        margin-top: 30px;
+
+    }
+
+    .left-main p {
+        width: 400px;
+        position: relative;
+        left: 50px;
+    }
+
+    .clients {
+        margin-bottom: 20px;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        z-index: 9999;
+        gap: 20px;
+        left: 150px;
+        top: 0;
+        background-color: var(--clr-Almost-White);
+        padding: 0px 50px;
+        height: 100%;
+        width: 50%;
+
+
+        
+    }
+
+
+    .navLink {
+        position: relative;
+        right: 0;
+        left: 60px;
+       
+       
+    }
+
+
+    .close-menu {
+        display: grid;
+        margin-top: 22px;
+        position: relative;
+        left: 230px;
+        cursor: pointer;
+        
+    }
+
+
+    .features {
+        margin-top: 30px;
+    }
+
+    .btns {
+        flex-direction: column;
+        position: fixed;
+        z-index: 99999;
+        top: 560px;
+        width: 300px;
+        left: 170px;
+        display: none;
+
+    }
+
+    #menu-icon, .menu-icon {
+        display: flex;
+        position: absolute;
+        right: 12px;
+        top: 14px;
+        color: var(--clr-Almost-Black);
+        cursor: pointer;
+    }
+
+
+    .overlay {
+        background-color: hsla(0, 0%, 8%, 0.366);
+        z-index: 2222;
+        height: 200%;
+        width: 100%;
+        position: absolute;
+        margin-top: -30px;
+
+        
+       
+    }
+
+    .dropdown-list {
+        box-shadow: none;
+        position: relative;
+    }
+
+    .features-dropdown {
+        position: relative;
+        right: 20px;
+    }
+
+
+}
+
+
+
+
+
+
