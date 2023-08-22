@@ -26,8 +26,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [solution](https://your-solution-url.com)
-- Live Site URL: [live site](https://your-live-site-url.com)
+- Solution URL: [solution](https://github.com/Saf-Awi/intro-section-with-dropdown-navigation)
+- Live Site URL: [live site](https://saf-awi.github.io/intro-section-with-dropdown-navigation/)
 
 ## My process
 
